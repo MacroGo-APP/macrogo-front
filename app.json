@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "macrogo",
+    "scheme": "macrogo",
+    "slug": "macrogo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/app_logo.png",
+    "owner": "veraxqy",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./src/assets/app_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.macrogo.app"
+    },
+    "android": {
+      "package": "com.macrogo.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/app_logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "blunder": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7abda4b5-e17b-4d89-becb-d919fa1af357"
+      }
+    }
+  }
+}

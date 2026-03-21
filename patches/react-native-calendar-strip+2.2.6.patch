@@ -1,0 +1,22 @@
+diff --git a/node_modules/react-native-calendar-strip/src/CalendarStrip.js b/node_modules/react-native-calendar-strip/src/CalendarStrip.js
+index 4064262..2bee083 100644
+--- a/node_modules/react-native-calendar-strip/src/CalendarStrip.js
++++ b/node_modules/react-native-calendar-strip/src/CalendarStrip.js
+@@ -526,11 +526,16 @@ class CalendarStrip extends Component {
+     return newState;
+   }
+ 
++  // --- CORREÇÃO AQUI ---
+   renderDay(props) {
++    // Extraímos a key de dentro do objeto props
++    const { key, ...rest } = props;
++    // E passamos explicitamente para o componente
+     return (
+-      <CalendarDay {...props} />
++      <CalendarDay key={key} {...rest} />
+     );
+   }
++  // ---------------------
+ 
+   renderHeader() {
+     return ( this.props.showMonth &&
